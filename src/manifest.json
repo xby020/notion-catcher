@@ -1,0 +1,19 @@
+{
+  "name": "notion-catcher",
+  "version": "0.0.0.1",
+  "description": "Catch webpage using custom setting to notion database.",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background/index.js"
+  },
+  "action": {
+    "default_popup": "./libs/popup.html",
+    "default_icon": {
+      "128": "./assets/nc.png"
+    }
+  },
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ]
+}
